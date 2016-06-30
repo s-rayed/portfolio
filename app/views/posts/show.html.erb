@@ -6,13 +6,13 @@
   </header>
 
   <div id="content">
-    <%= @post.content %>
+    <%= markdown @post.content %>
   </div>
 
   <hr>
 
   <div id="share_box">
-    <p>Share The Git chronicles</p>
+    <p>Share <%= @post.title %></p>
     <!-- Twitter -->
         <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @Rayed_s - &amp;url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         <!-- Facebook -->
@@ -24,10 +24,6 @@
   <hr>
 
 </div>
-
-
-<%= @post.title %><br>
-<%= @post.content %>
 
 <br>
 <br>
