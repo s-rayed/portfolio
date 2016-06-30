@@ -12,7 +12,7 @@
 <body>
 
 <header id="main_navigation" class="clearfix">
-  <a href="#" class="name">Ray Siddiqui</a>
+  <%= link_to "Rayed Siddiqui", root_path, class: "name" %>
   <nav>
   <%= link_to "Articles", posts_path %>
     <a href="#">Projects</a>
@@ -21,6 +21,16 @@
 </header>
 
 <%= yield %>
+
+<footer id="main_footer">
+  <p class="copyright">&copy; 2016 Rayed Siddiqui</p>
+  <nav>
+    <a href="https://github.com/s-rayed" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+    <a href="https://ca.linkedin.com/in/rayed-siddiqui-46a0969b" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/ryder01" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+    <a href="#"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
+  </nav>
+</footer>
 
 </body>
 </html>
