@@ -190,6 +190,11 @@ input[type="submit"], .button {
   text-align: center;
 }
 
+.video {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
 @import 'welcome';
 @import 'posts_projects';
 @import 'pygments';

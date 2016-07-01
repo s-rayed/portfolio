@@ -12,6 +12,14 @@
     </div>
   </div>
 
+  <hr>
+
+  <% if @project.video %>
+  <div class="video">
+    <%= video_tag "#{@project.video}", :size => "640x480", :controls => true %>
+  </div>
+  <% end %>
+
   <% if user_signed_in? %>
   <div id="admin_links">
     <%= link_to "Edit", edit_project_path(@project) %>
@@ -19,7 +27,7 @@
   </div>
   <% end %>
 
-
+  
 
   <hr>
 </div>
