@@ -2,4 +2,4 @@
 
 RAY SIDDIQUI'S PORTFOLIO
 
-Deployed on: https://ray-siddiqui.herokuapp.com/
+Deployed on: http://bit.ly/ray-siddiqui
